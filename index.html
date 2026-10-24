@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaelzior | Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #080812;
+      color: #f5f5ff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #25243b;
+    }
+
+    .logo {
+      color: #a78bfa;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .tag {
+      color: #a78bfa;
+      border: 1px solid #6d4ac5;
+      padding: 7px 15px;
+      border-radius: 30px;
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 9vw, 76px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      color: #a78bfa;
+    }
+
+    .hero p {
+      color: #aaa9c2;
+      max-width: 520px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #8b5cf6;
+      color: white;
+      padding: 12px 23px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      border: 1px solid #45415e;
+    }
+
+    section {
+      padding: 65px 8%;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    .muted {
+      color: #aaa9c2;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #11111f;
+      border: 1px solid #29283f;
+      padding: 25px;
+      border-radius: 14px;
+    }
+
+    .card h3 {
+      color: #c4b5fd;
+      margin-bottom: 10px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skills span {
+      border: 1px solid #393451;
+      background: #151326;
+      padding: 10px 16px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #25243b;
+      color: #aaa9c2;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      nav a {
+        margin-left: 9px;
+        font-size: 12px;
+      }
+
+      section {
+        padding: 45px 6%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">VAELZIOR.</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="tag">ASPIRING DEVELOPER</div>
+      <h1>Building the<br><span>Digital Future.</span></h1>
+      <p>
+        Hi, I'm Vaelzior. I'm learning to build useful
+        digital products with code, creativity and AI.
+        This is my journey from beginner to developer.
+      </p>
+      <div>
+        <a class="btn" href="#projects">Explore Projects</a>
+        <a class="btn secondary"
+           href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="muted">
+        I'm a beginner developer focused on learning
+        programming, web development and problem-solving.
+        I believe in building real projects and improving
+        through consistent practice.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript — Learning</span>
+        <span>Python — Learning</span>
+        <span>GitHub</span>
+        <span>AI Tools</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Portfolio Website</h3>
+          <p class="muted">
+            A responsive personal website built with HTML
+            and CSS to showcase my developer journey.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Next Project</h3>
+          <p class="muted">
+            More projects coming as I learn and build.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Vaelzior | Built with curiosity and code.
+  </footer>
+
+</body>
+</html>
